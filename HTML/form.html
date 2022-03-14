@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://www.google.com/search?" method="get">
+        <table>
+            <tr>
+                <td>Keyword</td>
+                <td>
+                    <input placeholder="search..." type="search" name="q">
+                    <input type="hidden" name="code" value="CodeGym">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input disabled type="email" id="email" name="e" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Information</td>
+                <td>
+                    <textarea cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Province</td>
+                <td>
+                    <select >
+                        <option value="">TT Huế</option>
+                        <option value="">Đà Nẵng</option>
+                        <option value="">Quảng Trị</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>
+                    <input value="2353456346" readonly type="tel" name="e" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="number" name="e" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td>
+                    <input type="range" min="0" max="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Avatar</td>
+                <td>
+                    <input type="image" src="resource/pic1.jpg" style="width:100px; height:100px;">
+                    <input type="file" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>
+                    <input type="color" >
+                </td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td>
+                    <input type="url" name="url" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>
+                    <input type="text" name="q">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="pw">
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" checked> Football
+                    <input type="checkbox"> Swimming
+                    <input type="checkbox"> Walking
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" checked name="gender"> Male
+                </td>
+            </tr>
+            <tr>
+                <td>Dob</td>
+                <td>
+                    <input type="date" min="2022-01-01" max="2022-12-31">
+                    <input type="time">
+                    <br>
+                    <input type="datetime-local">
+                    <br>
+                    <input type="week">
+                    <br>
+                    <input type="month">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- <button type="submit">Search</button> -->
+                    <input type="submit" value="Search">
+                    <input type="reset" value="Cancel">
+                    <input type="button" value="Back" onclick="window.history.back()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
