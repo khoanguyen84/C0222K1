@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Overview</title>
+</head>
+<body>
+    <!-- có 3 cách để nhúng JS vào HTML -->
+    <!-- cách 1: nhúng trực tiếp và element thông qua event -->
+    <!-- cách 2: thông qua thẻ script, bên trong HTML -->
+    <button
+        onmouseover="this.innerText = new Date()"
+        onmouseout="this.innerText ='Hover me to show current time'"
+    >Hover me to show current time</button>
+    <br>
+    <button
+        onmouseover="document.getElementsByTagName('p')[0].innerText = new Date()"
+    >Hover to me and current time on p element</button>
+    <p></p>
+    <input type="color" oninput="
+                                document.getElementsByTagName('p')[0].innerText= this.value;
+                                document.body.style.backgroundColor = this.value;
+                                document.getElementsByTagName('button')[0].style.color = this.value;
+                            ">
+    <br>
+    Password <input class="pw" type="password">
+    <br>
+    <!-- <button name="btn" onclick="showHidePW()">Show Password</button> -->
+    <button name="btn">Show Password</button>
+    <!-- <input type="checkbox" onchange="providePermision(this)"> provide permision -->
+    <input type="checkbox" onchange="providePermision()"> provide permision
+    <!-- Show password <input type="text" id="spw"> -->
+    <script>
+        // function providePermision(cbx){
+        //     if(cbx.checked){
+        //         // console.log("checked")
+        //         document.getElementsByName("btn")[0].addEventListener("click", showHidePW)
+        //     }
+        //     else{
+        //         // console.log("unchecked")
+        //         document.getElementsByName("btn")[0].removeEventListener("click", showHidePW)
+        //     }
+        // }
+        // function providePermision(){
+        //     let cbx = document.querySelector("input[type='checkbox']");
+        //     if(cbx.checked){
+        //         // console.log("checked")
+        //         document.getElementsByName("btn")[0].addEventListener("click", showHidePW)
+        //     }
+        //     else{
+        //         // console.log("unchecked")
+        //         document.getElementsByName("btn")[0].removeEventListener("click", showHidePW)
+        //     }
+        // }
+        
+        // function showHidePW(){
+        //     let pw = document.getElementsByClassName("pw")[0];
+        //     let btn = document.getElementsByName("btn")[0];
+        //     if(pw.type == "password"){
+        //         pw.type = "text"
+        //         btn.innerText = "Hide Password"
+        //     }
+        //     else{
+        //         pw.type = "password"
+        //         btn.innerText = "Show Password"
+        //     }
+        // }
+    </script>
+    <script src="site.js"></script>
+</body>
+</html>
