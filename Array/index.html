@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let size = Number(prompt("Nhập vào độ dài của mảng"));
+        // let numbers = new Array(size);
+        // for( let i = 0 ; i < numbers.length ; i++){
+        for( let i = 0 ; i < size ; i++){
+            numbers[i] = Number(prompt(`Nhập vào phần tử thứ ${i}`));
+            // numbers.push(Number(prompt(`Nhập vào phần tử thứ ${i}`)));
+        }
+        document.write(numbers);
+    </script>
+</body>
+</html>
