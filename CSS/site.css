@@ -1,0 +1,102 @@
+*{
+    font-style: italic;
+}
+h1{
+    color: orange !important; 
+    background-color: green;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 30px;
+    border: 10px solid tomato;
+}
+
+#h2_2{
+    color:orange;
+    background-color: aqua;
+}
+
+.h2{
+    border: 1px solid orange;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+button{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color:orange;
+    border:1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orange;
+    color:white
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed gray;
+    padding: 10px 0px;
+    color:red;
+}
+
+ul{
+    list-style: none;
+    width: 250px;
+}
+
+ul a {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    display: block;
+    padding:5px 5px;
+    border-radius: 0px 7px;
+}
+
+ul li{
+    margin-bottom: 1px;
+}
+
+ul a:hover{
+    text-align: right;
+}
+
+
+input[type="checkbox"]:checked{
+    transform: scale(3);
+}
+
+/* div p::before{
+    content: "+ ";
+}
+div p::after {
+    content: " *";
+} */
+
+div p::first-letter{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div p::first-line{
+    color:rebeccapurple
+}
+
+div p::selection{
+    background-color: orange;
+    color:red;
+}
+
+input[type="number"]{
+    background-color: green;
+}
+
+input[name="fullname"]{
+    background-color: red;
+}
