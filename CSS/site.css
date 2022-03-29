@@ -1,5 +1,6 @@
 *{
     font-style: italic;
+    box-sizing: border-box;
 }
 h1{
     color: orange !important; 
@@ -8,6 +9,7 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     border-radius: 30px;
     border: 10px solid tomato;
+    max-width: 900px;
 }
 
 #h2_2{
@@ -30,11 +32,14 @@ button{
     padding: 5px;
     border-radius: 3px;
     cursor: pointer;
+    
 }
 
 button:hover{
-    background-color: orange;
-    color:white
+    /* background-color: orange; */
+    /* color:white; */
+    transform: scale(0.95);
+    transition: .9s;
 }
 
 input:focus{

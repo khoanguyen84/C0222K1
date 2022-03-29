@@ -14,12 +14,47 @@
             font-family: 'Courier New', Courier, monospace;
             border-radius: 30px;
         }
+
+        div {
+            width: 600px;
+            height: 300px;
+            border: 5px solid red;
+            padding: 10px 10px 10px 10px;
+            /* margin: 20px 20px 20px 20px; */
+            /* margin:20px; */
+            /* margin: 20px 50px 20px 50px; */
+            margin: 20px 50px;
+            /* margin-top: 10px; */
+            /* margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px; */
+            /* background-image: url("images/up.jpg"); */
+            /* background-size: cover; */
+            background-image: linear-gradient(to right bottom, red, yellow, blue, orange);
+            /* transform: rotate(45deg); */
+        }
+
+        @media only screen and (max-width: 600px) {
+            div{
+                /* display: block; */
+                width: 200px;
+                padding: 0px;
+                margin: 0px;
+            }   
+        }
+        body{
+            background-image: url("images/up.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: right bottom;
+        }
     </style>
     <!-- Relationship -->
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
+    <div></div>
     <input name="fullname" type="text">
     <br>
     <input name="age" type="number">
@@ -57,11 +92,12 @@
     </ul>
     <input type="checkbox">
     <div>
-        <p>Vestibulum aliquam sollicitudin enim, sit amet facilisis lorem gravida in. Etiam ac metus rhoncus, viverra eros euismod, rhoncus justo</p>
+        <p>Vestibulum aliquam sollicitudin enim, sit amet facilisis lorem gravida in. Etiam ac metus rhoncus, viverra
+            eros euismod, rhoncus justo</p>
         <p>Donec mattis a augue gravida feugiat. Nulla tincidunt elit non tortor pharetra</p>
     </div>
 
-    
+
 
 </body>
 
