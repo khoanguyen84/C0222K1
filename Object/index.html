@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .product{
+            width: 200px;
+            background-image: linear-gradient(to right bottom, lightcoral, coral, orange);
+            text-align: center;
+            color:white;
+            border-radius: 5px;
+            box-shadow: 5px 5px rgb(235, 183, 88);
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .product:hover{
+            box-shadow: 5px 5px rgb(211, 160, 65);
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+        .heading{
+            color: white;
+        }
+
+        .photo{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="cart-area">
+        <a href="javascript:;" onclick="showCartDetail()">Cart(0)</a>
+        <table border="1" id="cart-detail">
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <div id="show-product">
+        
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>
