@@ -64,19 +64,19 @@
 // setter: bổ sung/sửa đổi giá trị của 1 thuộc tính
 // getter: lấy ra giá trị đang lưu trữ ở 1 thuộc tính
 // Access Modifier
-function Student(fullname, gender, dob, email){
+function Student(fullname, gender, dob, email) {
     this.fullname = fullname;
     this.gender = gender;
     this.dob = dob;
     this.email = email;
     this.hobbies = [];
-    this.setHobbies = function(hobbies){
+    this.setHobbies = function (hobbies) {
         this.hobbies = hobbies;
     }
-    this.greeting = function(){
+    this.greeting = function () {
         return `My name is ${this.gender ? 'Mr' : "Ms"}.${this.fullname}`;
     }
-    this.getHobbies = function(){
+    this.getHobbies = function () {
         return this.hobbies.join(",")
     }
 }
@@ -140,20 +140,21 @@ let students = [
 
 // console.log(`${result != -1 ? "Có" : "Không có"} Tiến`)
 
-let htmls = students.map(function(student){
-    return `
-                <tr>
-                    <td>${student.fullname}</td>
-                    <td>${student.gender}</td>
-                    <td>${student.dob}</td>
-                    <td>${student.email}</td>
-                </tr>
-            `
-})
-document.write(`<table border="1"><tbody>${htmls.join("")}</tbody></table>`)
+// let htmls = students.map(function(student){
+//     return `
+//                 <tr>
+//                     <td>${student.fullname}</td>
+//                     <td>${student.gender}</td>
+//                     <td>${student.dob}</td>
+//                     <td>${student.email}</td>
+//                 </tr>
+//             `
+// })
+// document.write(`<table border="1"><tbody>${htmls.join("")}</tbody></table>`)
 
 
 // Tạo 1 class có tên Product
 // Có các thuộc tính: productId, productName, price, quantity
 // Tạo 1 mảng products, gồm 5 sản phẩm
 // Hiển thị các sản phẩm đang có trong products vào 1 bảng
+
