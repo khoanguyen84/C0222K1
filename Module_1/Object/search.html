@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+
+<body>
+    <input type="search">
+    <ul>
+
+    </ul>
+
+    <script>
+        const products = [
+            { id: 1, name: "áo thun" },
+            { id: 2, name: "quần đùi" },
+            { id: 3, name: "áo sơ mi" },
+            { id: 4, name: "quần jean" },
+            { id: 5, name: "quần kaki" }
+        ]
+
+        document.querySelector("input").oninput = function(e){
+            let keyword = e.target.value;
+            let result = products.filter(function(product){
+                return product.name.toLowerCase().indexOf(keyword.toLowerCase()) != -1
+            })
+            console.log(result)
+        }
+        // function search(element){
+        //     let keyword = element.value;
+        //     let result = products.filter(function(product){
+        //         return product.name.toLowerCase().indexOf(keyword.toLowerCase()) != -1
+        //     })
+        //     console.log(result)
+        // }
+    </script>
+</body>
+
+</html>

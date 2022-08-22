@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+</head>
+<body>
+    <!-- <input type="password" id="password" oninput="enterPassword()">
+    <span id="showpw"></span>
+    <script>
+        function enterPassword(){
+            document.querySelector('#showpw').innerHTML = document.querySelector('#password').value;
+        }
+    </script> -->
+    <input type="password" id="password">
+    <span id="showpw"></span>
+    <script>
+        document.querySelector('#password').oninput = function(e){
+            // console.log(e.target.value)
+            document.querySelector('#showpw').innerHTML = e.target.value;
+        }
+    </script>
+</body>
+</html>
