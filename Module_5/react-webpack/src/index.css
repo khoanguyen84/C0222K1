@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 970px;
+    margin: 0px auto;
+}
+.header{
+    background-color: green;
+    color: white;
+}
+
+.content{
+    background-color: yellow;
+    color: white;
+}
+
+.footer{
+    background-color: gray;
+    color: white;
+}
