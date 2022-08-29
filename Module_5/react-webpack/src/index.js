@@ -4,14 +4,24 @@ import Content from "./components/Content";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import '../src/index.css';
+import UseEffect from './components/UseEffect';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 // function component
-function App(){
+function App() {
     return (
         <div className="container">
-            <Header/>
-            <Content/>
-            <Footer/>
+            <BrowserRouter>
+                <Header />
+                {/* <Content/> */}
+                {/* <UseEffect /> */}
+                <Routes>
+                    {/* <Route path="/" element={<Navigate to={<UseEffect />} />} /> */}
+                    <Route path="/content" element={<Content />} />
+                    <Route path="/use-effect" element={<UseEffect />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
         </div>
     )
 }
@@ -31,4 +41,4 @@ function App(){
 
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
-root.render(<App/>);
+root.render(<App />);

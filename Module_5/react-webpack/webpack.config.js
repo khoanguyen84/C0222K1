@@ -17,13 +17,20 @@ module.exports = {
       {
         test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: 'src/asset/images/[name].[ext]'
+        }
       }
     ]
   },
   // Chứa các plugins sẽ cài đặt trong tương lai
   plugins: [
     new HtmlWebpackPlugin({
-        template: "./public/index.html"
-      })
+      template: "./public/index.html"
+    })
   ]
 };
